@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9/Documents/GitHub/mlops-test-repo/mlruns/0/e9211b3e7e0447a7bd524156365e03c9/artifacts
+end_time: 1652632293181
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: e9211b3e7e0447a7bd524156365e03c9
+run_uuid: e9211b3e7e0447a7bd524156365e03c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1652632293062
+status: 4
+tags: []
+user_id: Андрей

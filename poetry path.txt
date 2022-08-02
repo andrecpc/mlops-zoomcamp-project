@@ -1,0 +1,7 @@
+C:\Users\Андрей\AppData\Roaming\Python\Python310\Scripts\poetry.exe
+
+mlflow models serve --no-conda -m s3://arts/1/931e11f46b51487b80ae54f20cb94b7f/artifacts/models -h 0.0.0.0 -p 8001
+
+https://youtu.be/KZ5Cdevd-b8?t=3742
+
+mlflow models build-docker -m s3://arts/1/931e11f46b51487b80ae54f20cb94b7f/artifacts/models -n "keras"

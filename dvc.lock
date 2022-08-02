@@ -1,0 +1,49 @@
+schema: '2.0'
+stages:
+  visualize:
+    cmd: python src/visualization/visualize.py data/raw/VegetableImages/train
+    deps:
+    - path: data/raw/VegetableImages/train
+      md5: ec470e775907e7796f01e8a63b45de8e.dir
+      size: 408340920
+      nfiles: 15000
+    - path: src/visualization/visualize.py
+      md5: db89137e07958e91c8b86b6f8143dffb
+      size: 1001
+  generate_predictions:
+    cmd: python src/models/predict_sample.py data/external/3.jpg models/model
+    deps:
+    - path: data/external/3.jpg
+      md5: 76c667a4f7dc3401198e52164d31aaaa
+      size: 64557
+    - path: models/model
+      md5: 52c261a8b150bef4d94060d4a6d1eb95.dir
+      size: 135219921
+      nfiles: 4
+    - path: src/models/predict_sample.py
+      md5: 5ef45d6562dbcf085fc0c510cbdd35fd
+      size: 1564
+  train:
+    cmd: python src/models/train_model.py data/raw/VegetableImages/train data/raw/VegetableImages/validation
+      data/raw/VegetableImages/test models/model
+    deps:
+    - path: data/raw/VegetableImages/test
+      md5: 203bb6f969c5ac97d1518deecb1406f0.dir
+      size: 81957992
+      nfiles: 3000
+    - path: data/raw/VegetableImages/train
+      md5: ec470e775907e7796f01e8a63b45de8e.dir
+      size: 408340920
+      nfiles: 15000
+    - path: data/raw/VegetableImages/validation
+      md5: e444957280cdbc72706444851ad2aa28.dir
+      size: 81442828
+      nfiles: 3000
+    - path: src/models/train_model.py
+      md5: c698ba4adc36b81b2518bcec1629d95b
+      size: 3702
+    outs:
+    - path: models/model
+      md5: 52c261a8b150bef4d94060d4a6d1eb95.dir
+      size: 135219921
+      nfiles: 4

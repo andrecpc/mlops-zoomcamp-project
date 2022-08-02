@@ -1,0 +1,24 @@
+stages:
+
+  visualize:
+    cmd: python src/visualization/visualize.py data/raw/VegetableImages/train
+    deps:
+      - data/raw/VegetableImages/train
+      - src/visualization/visualize.py
+
+  train:
+    cmd: python src/models/train_model.py data/raw/VegetableImages/train data/raw/VegetableImages/validation data/raw/VegetableImages/test models/model
+    deps:
+      - data/raw/VegetableImages/train
+      - data/raw/VegetableImages/validation
+      - data/raw/VegetableImages/test
+      - src/models/train_model.py
+    outs:
+      - models/model
+      
+  generate_predictions:
+    cmd: python src/models/predict_sample.py data/external/3.jpg models/model
+    deps:
+      - data/external/3.jpg
+      - models/model
+      - src/models/predict_sample.py
