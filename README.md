@@ -5,7 +5,10 @@ This repository contains the final project for the course [MLOps Zoomcamp](https
 
 The ML tasks idea and the dataset are taken from [here](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset).
 
-Project Organization ([Cookiecutter DS template](https://github.com/drivendata/cookiecutter-data-science))
+## Project Organization
+
+([Cookiecutter DS template](https://github.com/drivendata/cookiecutter-data-science))
+
 ------------
 
     ├── LICENSE            <- License details.
@@ -50,12 +53,53 @@ Project Organization ([Cookiecutter DS template](https://github.com/drivendata/c
     └── start.py           <- Simple pythons pipline 
 --------
 
-**Project Design**
+## Project Design
+
 |![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/project_design.png)|
 |----|
 
 The requirements for the final project are [here](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/07-project). 
 Let's go!
+
+----------------------------------------------------
+
+## Project Description
+
+**Classifier of vegetables.**
+
+**Problem statement**
+There is a lot of research on the importance of the correct placement of goods on store shelves (for example [link 1](https://www.researchgate.net/publication/215742904_Does_In-Store_Marketing_Work_Effects_of_the_Number_and_Position_of_Shelf_Facings_on_Brand_Attention_and_Evaluation_at_the_Point_of_Purchase),  [link 2](https://www.researchgate.net/publication/41623519_Brand_placement_and_consumer_choice_An_in-store_experiment)). But sometimes it is not enough to arrange the goods correctly, often it is necessary to return these goods to their places after the buyers touch them and rearrange them.
+One of the particular similar tasks may be the restoration of the layout of vegetables in the relevant departments. As a solution to this problem, you can imagine a robot laying out vegetables, one of the skills of which should be the recognition of vegetables.
+Therefore, the simplest classifier of vegetables is implemented in this project.
+
+**Data description**
+The dataset from Kaggle is used as [data]([https://www.kaggle.com/code/chitwanmanchanda/vegetable-image-classification-using-cnn/data](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset), which contains 15 classes of vegetables; 1400 examples per class.
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/1.png)|
+The data has already been worked out and divided into blocks for training, validation and final control.
+
+**Optimization methods**
+Stochastic gradient descent with adaptive moment estimation (Adam). This method performs well in most machine learning tasks and provides the best convergence.
+
+**Quality metrics**
+Accuracy — the proportion of correct answers. With an equal number of images in classes, a metric that is excellent and understandable to a person.
+
+**Description of MLops approaches**
+
+* Version control system: git (github)
+* Codestyle control tools: Pylint
+* Template engine: Cookie cutter
+* Workflow manager: DVC
+* Tracking experiments: MLflow
+
+**Description of the resulting service/product**
+
+Workflow consists of 3 blocks: demonstration of examples of images of each class, model training and saving, class prediction for the image.
+
+An additional 4 block is used to process user post requests to the API, which receive an image at the input, and give the name of the predicted class at the output.
+
+The classifier is implemented using a sequential connection of convolutional, pooling and fully connected layers of the Keras library.
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/2.png)|
 
 ----------------------------------------------------
 
