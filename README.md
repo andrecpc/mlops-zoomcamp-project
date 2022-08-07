@@ -1,5 +1,6 @@
 # mlops-zoomcamp-project
 ==============================
+
 This repository contains the final project for the course [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp).
 
 The ML tasks idea and the dataset are taken from [here](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset).
