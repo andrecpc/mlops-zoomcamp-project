@@ -1,27 +1,27 @@
-mlops-repo
+# mlops-zoomcamp-project
 ==============================
+This repository contains the final project for the course [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp).
 
-Final project by MLOps course (ODS, Yandex.Q)
+The ML tasks idea and the dataset are taken from [here](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset).
 
-ML task and a part of code are taken from here https://www.kaggle.com/code/chitwanmanchanda/vegetable-image-classification-using-cnn/notebook
-
-Project Organization
+Project Organization (Cookiecutter DS template)
 ------------
 
-    ├── LICENSE
+    ├── LICENSE            <- License details.
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
     │   ├── external       <- Data from third party sources.
     │   └── raw            <- The original, immutable data dump.
     ├── Docker             <- Docker settings for minio, mlflow, pgsql, nginx
+    ├── Screenshots        <- Different Images for Readme
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     ├── mlruns             <- Meta-data of mlflows runnings
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     ├── notebooks          <- Jupyter notebooks (EDA)
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    └── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    └── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
     │   ├── models         <- Scripts to train models and then use trained models to make
     │   │   │                 predictions
@@ -30,34 +30,30 @@ Project Organization
     │   │   └── train_model.py
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
     │   |   └── visualize.py
-    |   ├── app       <- Scripts to run API
+    |   ├── app            <- Scripts to run API
     │       └── inference.py
     ├── venv               <- Virtual environment settings
+    ├── .dvc               <- DVC settings
+    ├── .github            <- Github settings.
+    │   ├── workflows      <- CI/CD settings
+    └── .dvcignore         <- DVC ignore settings.
+    └── .gitignore         <- Git ignore settings
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
     └── docker-compose.yaml <- Docker settings
     └── dvc.lock           <- DVC meta-data
     └── dvc.yaml           <- DVC pipline settings 
-    └── mlops-ods.drawio.xml    <- Pipline structure in draw.io format
+    └── project_design.drawio.xml    <- Pipline structure in draw.io format
     └── poetry path.txt    <- Usefull CLI commands 
     └── poetry.lock        <- Poetry meta-data 
     └── pyproject.toml     <- Poetry settings 
     └── start.py           <- Simple pythons pipline 
 --------
 
-https://docs.google.com/document/d/18Qu_3Mzwz_aZmB7iZhsP0kTlRKrKj56j/edit
-https://docs.google.com/presentation/d/1yjxuByyYBfDwjU-Y_zRAQU0FaAsfGZHT6S0oQ_Ka9eE/edit#slide=id.p
-
-
-
-# data-engineering-zoomcamp-project
-
-This repository contains the final project for the course [data-engineering-zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp).
-
 **Project Design**
-|![](https://github.com/andrecpc/data-engineering-zoomcamp-project/blob/main/Screenshots/data-engineering-zoomcamp-project.drawio.png)|
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/project_design.png)|
 |----|
 
-The requirements for the final project are [here](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_7_project). 
+The requirements for the final project are [here](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/07-project). 
 Let's go!
 
 ----------------------------------------------------
