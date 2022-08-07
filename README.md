@@ -5,7 +5,7 @@ This repository contains the final project for the course [MLOps Zoomcamp](https
 
 The ML tasks idea and the dataset are taken from [here](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset).
 
-Project Organization (Cookiecutter DS template)
+Project Organization ([Cookiecutter DS template](https://github.com/drivendata/cookiecutter-data-science))
 ------------
 
     ├── LICENSE            <- License details.
