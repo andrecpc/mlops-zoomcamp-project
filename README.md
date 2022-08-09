@@ -156,8 +156,16 @@ After 10 epochs of training, the Accuracy on the test dataset reaches about 95.4
 **2. Check EDA notebook**
 
 To understand the idea of the project.
+
 [Notebook](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/notebooks/vegetable_image_classification_using_cnn.ipynb)
 
+**3. Installing dependencies**
+
+[Install Poetry](https://python-poetry.org/docs/) in the way that is convenient for you.
+
+Install packages from the .toml-file using the command
+
+```poetry install```
 
 ----------------------------------------
 
