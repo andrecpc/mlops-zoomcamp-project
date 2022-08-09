@@ -73,14 +73,20 @@ One of the particular similar tasks may be the restoration of the layout of vege
 Therefore, the simplest classifier of vegetables is implemented in this project.
 
 **Data description**
-The dataset from Kaggle is used as [data]([https://www.kaggle.com/code/chitwanmanchanda/vegetable-image-classification-using-cnn/data](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset), which contains 15 classes of vegetables; 1400 examples per class.
+
+The dataset from Kaggle is used as [data](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset), which contains 15 classes of vegetables; 1400 examples per class.
+
 |![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/1.png)|
+|----|
+
 The data has already been worked out and divided into blocks for training, validation and final control.
 
 **Optimization methods**
+
 Stochastic gradient descent with adaptive moment estimation (Adam). This method performs well in most machine learning tasks and provides the best convergence.
 
 **Quality metrics**
+
 Accuracy — the proportion of correct answers. With an equal number of images in classes, a metric that is excellent and understandable to a person.
 
 **Description of MLops approaches**
@@ -100,6 +106,7 @@ An additional 4 block is used to process user post requests to the API, which re
 The classifier is implemented using a sequential connection of convolutional, pooling and fully connected layers of the Keras library.
 
 |![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/2.png)|
+|----|
 
 ----------------------------------------------------
 
