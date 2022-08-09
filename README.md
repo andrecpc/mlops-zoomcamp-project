@@ -147,14 +147,20 @@ After 10 epochs of training, the Accuracy on the test dataset reaches about 95.4
 
 ----------------------------------------------------
 
-##
+## How to run it
 
+**1. Copy this repo**
 
+```git clone https://github.com/andrecpc/mlops-zoomcamp-project.git```
 
+**2. Check EDA notebook**
+
+To understand the idea of the project.
+[Notebook](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/notebooks/vegetable_image_classification_using_cnn.ipynb)
 
 
 ----------------------------------------
 
-Well, here is the final of the project. Data Engineering Zoomcamp is an excellent course that motivated me to get acquainted with new services and expand my skills.
+Well, here is the final of the project. MLOps Zoomcamp is an excellent course that motivated me to get acquainted with new services and expand my skills.
 
 **Thanks to the authors of the course!**
