@@ -167,6 +167,75 @@ Install packages from the .toml-file using the command
 
 ```poetry install```
 
+**4. Pipeline check**
+
+Run 
+```dvc dag```
+to see the pipeline visualization.
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/4.png)|
+|----|
+
+The pipeline consists of 3 blocks: demonstration of examples of images of each class, training and saving the model, class prediction for one given image.
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/5.png)|
+|----|
+
+To start DVC DAG run the command
+
+```dvc repro```
+
+Example of visualization
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/6.PNG)|
+|----|
+
+Example of traning
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/7.PNG)|
+|----|
+
+Example of prediction generation
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/8.PNG)|
+|----|
+
+If desired, you can run the MLflow web shell, the trained model will appear in the menu.
+
+```mlflow ui```
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/9.PNG)|
+|----|
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/10.PNG)|
+|----|
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/11.png)|
+|----|
+
+**5. Run Docker**
+
+To run all containers, run the commands
+
+```docker-compose up -d --build```
+
+```docker build -f Docker/mlflow_image/Dockerfile -t mlflow_server .```
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/12.png)|
+|----|
+
+The pretrained model has already been loaded into the S3 bucket of Minio
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/13.png)|
+|----|
+
+**6. Check API**
+
+You can check the operation of the model using the API and the Postman program.
+
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/14.png)|
+|----|
+
 ----------------------------------------
 
 Well, here is the final of the project. MLOps Zoomcamp is an excellent course that motivated me to get acquainted with new services and expand my skills.
