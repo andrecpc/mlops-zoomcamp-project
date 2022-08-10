@@ -3,7 +3,7 @@
 ['remote "myremote"']
     url = s3://dvc
     endpointurl = https://storage.yandexcloud.net
-    access_key_id = YCAJEVBoJVvDkJR2QUqsKovTv
-    secret_access_key = YCMo1Z3lXoE5omVWUlUz2giVmWKuMVStK1wrtQ6W
+    access_key_id = YCAJEVxxxxxxxxxxxxxxxxxxxxvTv
+    secret_access_key = YCMo1Z3xxxxxxxxxxxxxxxxxxxuMVStK1wrtQ6W
 
 
