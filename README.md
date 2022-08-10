@@ -116,18 +116,18 @@ After 10 epochs of training, the Accuracy on the test dataset reaches about 95.4
 
 **Technology stack**
 
-* Language: Python 3.10.4
+* Programming Language: Python 3.10.4
 * Dependency Management: pip
-* Managing virtual districts: poetry
-* Versia management system: git (github)
-* Workflow menu, control version: DVC, Minio
-* Pattern: Soockiecutter
+* Packages Management: poetry
+* Version control: git (github)
+* Workflow orchestration, files version control: DVC, Minio
+* Project Template: Coockiecutter
 * Linter: Pylint
-* Autoformer: black
+* Code formatter: black
 * CLI: click, argparse
-* Monitoring: MLflow, postgres, minio, nginx, docker
+* Monitoring: MLflow, postgres, minio, nginx
+* Deployment and Runtime: Docker
 * ML stack: Keras
-* Runtime: docker
 * API: FastAPI
 
 **Problems and disadvantages of the current workflow. Possible improvements.**
@@ -204,10 +204,10 @@ If desired, you can run the MLflow web shell, the trained model will appear in t
 
 ```mlflow ui```
 
-|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/9.PNG)|
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/9.png)|
 |----|
 
-|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/10.PNG)|
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/10.png)|
 |----|
 
 |![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/11.png)|
@@ -233,7 +233,7 @@ The pretrained model has already been loaded into the S3 bucket of Minio
 
 You can check the operation of the model using the API and the Postman program.
 
-|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/14.png)|
+|![](https://github.com/andrecpc/mlops-zoomcamp-project/blob/main/Screenshots/14.PNG)|
 |----|
 
 ----------------------------------------
